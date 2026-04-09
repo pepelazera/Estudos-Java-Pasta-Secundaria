@@ -4,7 +4,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
-public abstract class Hospital<T> implements HospitalInterface {
+public abstract class Hospital implements HospitalInterface {
 
     private String name;
     private int age;
