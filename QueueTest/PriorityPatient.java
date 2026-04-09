@@ -1,4 +1,4 @@
-package StackTest;
+package QueueTest;
 
 public class PriorityPatient {
 }

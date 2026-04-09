@@ -41,6 +41,5 @@ public class StackProgram {
         System.out.println("\nMy actual stack: " + ninjaStack);
         System.out.println("Updated stack size: " + ninjaStack.size() + " elements"); // size of the stack
 
-
     }
 }
