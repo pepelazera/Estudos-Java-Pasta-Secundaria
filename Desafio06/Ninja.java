@@ -1,7 +1,6 @@
 package Desafio06;
 
-import java.util.LinkedList;
-import java.util.Scanner;
+import java.util.*;
 
 public class Ninja {
 
@@ -19,9 +18,7 @@ public class Ninja {
     private Integer age;
     private String village;
 
-    private LinkedList<String> sortedNames;
-    private LinkedList<Integer> sortedAge;
-    private LinkedList<String> sortedVillage;
+    private LinkedList<Object> ninjaLinkedList = new LinkedList<>();
 
     public Ninja() {
     }
@@ -32,11 +29,9 @@ public class Ninja {
         this.village = village;
     }
 
-    public Ninja(String name, Integer age, String village, LinkedList<String> sortedNames, LinkedList<Integer> sortedAge, LinkedList<String> sortedVillage) {
+    public Ninja(String name, Integer age, String village, LinkedList<Object> ninjaLinkedList) {
         this(name, age, village);
-        this.sortedNames = sortedNames;
-        this.sortedAge = sortedAge;
-        this.sortedVillage = sortedVillage;
+        this.ninjaLinkedList = ninjaLinkedList;
     }
 
     public String getName() {
@@ -64,6 +59,14 @@ public class Ninja {
     }
 
 
+    public LinkedList<Object> getNinjaLinkedList() {
+        return ninjaLinkedList;
+    }
+
+    public void setNinjaLinkedList(LinkedList<Object> ninjaLinkedList) {
+        this.ninjaLinkedList = ninjaLinkedList;
+    }
+
     @Override
     public String toString() {
         return  "name = '" + name + '\'' +
@@ -71,12 +74,15 @@ public class Ninja {
                 ", village = '" + village + '\'';
     }
 
-    public void sortedNinjas() {
-        Scanner ct = new Scanner(System.in);
 
-        System.out.print("How parameter do you want to sort ? ");
-        String answer = ct.nextLine().toLowerCase();
+        /*
 
-        if (answer.equals(""))
-    }
+            Como desafio adicional, implemente uma função que permita ordenar a lista de ninjas por
+            diferentes critérios: idade, nome ou vila. O sistema deverá oferecer ao usuário a opção de
+            escolher o critério de ordenação, e a lista deverá ser reorganizada com base na escolha. Além
+            disso, implemente uma funcionalidade que busque e retorne informações de um ninja
+            específico na lista com base no nome, utilizando um algoritmo de busca eficiente.
+
+         */
+
 }
